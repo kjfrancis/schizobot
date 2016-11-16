@@ -25,8 +25,8 @@ module.exports = function(robot) {
       return msg.send("Keith Francis is an awesome individual capable of world domination");
     });
   
-  robot.hear(/what's your favorite food?/, function(msg) {
-    return msg.send("I love everything is small Bytes!");
+  robot.hear(/what is your favorite food?/, function(msg) {
+    return msg.send("I love everything in small Bytes!");
   });
 }
 
