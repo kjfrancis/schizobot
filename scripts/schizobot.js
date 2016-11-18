@@ -21,13 +21,16 @@
 module.exports = function(robot) {
   //  YOUR CODE HERE ++
   //  Example
-    robot.hear(/who is keith?/, function(msg) {
-      return msg.send("Keith Francis is an awesome individual capable of world domination");
+    robot.respond(/tell me something interesting about keith?/, function(res) {
+      quotes = ["He wants brought a knife to a gunfight... just to even the odds", "His signature won a Pulitzer", "In museums, he is allowed to touch the art", "He once taught a german shepherd how to bark in spanish", "He once won the world series of poker using UNO cards".];
+      return res.send(res.random(quotes));
     });
   
   robot.hear(/what is your favorite food?/, function(msg) {
     return msg.send("I love everything in small Bytes!");
   });
+
+
 }
 
 
